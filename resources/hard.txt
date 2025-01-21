@@ -1,0 +1,40 @@
+Identify the figure of speech: "The silence was as deafening as thunder.",Simile,Paradox,Metaphor,Personification,B
+
+Which of the following words is an example of a gerund?,Running,Dance,Sleeping,Barked,A
+
+Who wrote the famous poem "Ozymandias"?,William Blake,John Keats,Percy Bysshe Shelley,Lord Byron,C
+
+What is the meaning of the suffix "-logy" in biology?,Study of,Science of,Theory of,Observation of,A
+
+Solve for x: 2x² - 3x - 5 = 0, 5/2,1,-1,No solution,C
+
+What is the derivative of sin(x)?,cos(x),-cos(x),sin(x),-sin(x),A
+
+A circle has a radius of 7. What is its area?,49π,14π,21π,77π,A
+
+A triangle with sides 5 12 and 13 is:,Equilateral,Right,Isosceles,Scalene,B
+
+What is the molar mass of H2SO4?,96 g/mol,98 g/mol,100 g/mol,102 g/mol,B
+
+Which gas law states that pressure and volume are inversely proportional?,Charles's Law,Boyle's Law,Avogadro's Law,Gay-Lussac's Law,B
+
+What particle is exchanged during nuclear reactions?,Electron,Photon,Neutron,Proton,C
+
+Who was the second president of the Philippines?,Manuel L. Quezon,Sergio Osmeña,Jose Laurel,Ramon Magsaysay,B
+
+The Pact of Biak-na-Bato was signed in which year?,1896,1897,1898,1901,B
+
+Who led the longest revolt in Philippine history?,Diego Silang,Dagohoy,Andres Malong,Francisco Maniago,B
+
+What is the name of the Philippine constitutional convention in 1934?,Tydings-McDuffie Act,1934 Constitutional Assembly,Malolos Congress,Philippine Constitutional Convention,D
+
+Which act established free public primary education in the Philippines?,Education Act of 1901,Education Act of 1982,Education Reform Act,Free Public Act of 1935,A
+
+Which treaty ended World War I?,Treaty of Paris,Treaty of Versailles,Treaty of Brest-Litovsk,Treaty of Ghent,B
+
+What was the name of the German strategy during World War II?,Trench Warfare,Blitzkrieg,Operation Overlord,Manhattan Project,B
+
+The Industrial Revolution began in which country?,France,United States,Germany,Great Britain,D
+
+Who succeeded Queen Elizabeth I of England?,James I,Charles I,Henry VIII,William III,A
+

@@ -1,0 +1,39 @@
+1 + 1?,2,4,6,1000,A
+
+What is the plural form of "child"?,Childs,Children,Childrens,Childes,B
+
+Which of the following is a complete sentence?,Running in the park,The dog barks,Quickly to the store,Because it rained,B
+
+Which of the following words is spelled correctly?,Recieve,Receive,Reciept,Receve,B
+
+What is 5 + 3?,6,7,8,9,C
+
+What is the product of 4 and 6?,20,22,24,26,C
+
+If you have a dozen eggs. How many eggs do you have?,6,10,12,14,C
+ 
+A triangle has three sides. True or false?,True,False,IDK,N/A,A
+
+What planet do we live on?,Mars,Jupiter,Earth,Venus,C
+
+Which part of the plant is responsible for photosynthesis?,Roots,Stem,Leaves,Flower,C
+
+What is the process of water changing from a liquid to a gas called?,Melting,Freezing,Evaporation,Condensation,C
+
+What is H2O commonly known as?,Salt,Water,Carbon dioxide,Hydrogen gas,B
+
+Who is known as the national hero of the Philippines?,Jose Rizal,Emilio Aguinaldo,Andres Bonifacio,Manuel L. Quezon,A
+
+What is the color of the sun in the Philippine flag?,Red,White,Yellow,Blue,C
+
+Which country colonized the Philippines for over 300 years?,United States,Spain,Japan,China,B
+
+What year is celebrated as Philippine Independence Day?,June 12,July 4,August 30,November 30,A
+
+Who discovered America in 1492?,Christopher Columbus,Ferdinand Magellan,Marco Polo,Amerigo Vespucci,A
+
+What war took place between 1939 and 1945?,World War I,World War II,Cold War,Vietnam War,B
+
+Who was the first president of the United States?,Abraham Lincoln,George Washington,Thomas Jefferson,John Adams,B
+
+What is the capital of France?,Rome,Paris,London,Berlin,B
