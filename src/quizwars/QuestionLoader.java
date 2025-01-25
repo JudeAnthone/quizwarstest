@@ -1,4 +1,4 @@
-  // utility class
+   // utility class
 package quizwars;
 import java.io.*;
 import java.util.*;
@@ -9,7 +9,7 @@ public class QuestionLoader {
 
   // Array List method for loading question
   public static List<Question> loadQuestion(String difficulty) {
-    
+
     // array list to store Question objects/questions - BOOK REFFERENCE
       List<Question> questions = new ArrayList<>();
         // change file path based on device folder. 
@@ -23,17 +23,17 @@ public class QuestionLoader {
       // loop stops when the reader is null
       while ((line = reader.readLine()) != null) {
         String[] parts = line.split(",");
-        if (parts.length == 6) {
+        if (parts.length == 6) { 
           String questionText = parts[0];
             String optionA = parts[1];
-              String optionB = parts[2];
-                String optionC = parts[3];
+              String optionB = parts[2]; 
+                String optionC = parts[3];			
                   String optionD = parts[4];
                   String correctAnswer = parts[5];
             
                   // created an object of Question.java (Abstract class)
                   Question question = createQuestion(difficulty, questionText, optionA, optionB, optionC, optionD,
-                      correctAnswer);
+                      correctAnswer);   
 
           
           if (question != null) {
@@ -47,10 +47,36 @@ public class QuestionLoader {
       e.printStackTrace();
     }
 
-    return questions;
+    return questionLimiter(difficulty, questions);
 
   }
   
+  
+  // question limiter method
+  private static List<Question>questionLimiter(String difficulty, List<Question> questions){
+	  int questionLimit = 0;
+	  
+	 // limiter per difficulty level
+	  switch(difficulty) {
+	  case "easy":
+		  questionLimit = 5;
+		  break;
+		  
+	  case "medium":
+		  questionLimit = 10;
+		  break;
+		  
+	  case "hard":
+		  questionLimit = 20;
+		  break;
+		  default:
+			  System.out.println("ERROR: Invalid Difficulty");
+			  return new ArrayList<>();
+	  }
+	  
+	  // return number of question based on the difficulty
+	  return questions.size() > questionLimit ? questions.subList(0, questionLimit) : questions;
+  }
   
     // we now utilize the createQuestion method that we made Question.java (Abstract class)
   private static Question createQuestion(String difficulty, String questionText, String optionA, String optionB, String optionC, String optionD, String correctAnswer){
