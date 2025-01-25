@@ -1,15 +1,17 @@
 package quizwars;
 import java.util.*;
+ 
 
 public class QuizGame {
-// ANSI color codes
-    private static final String RESET = "\u001B[0m";
+// ANSI color codes 
+    private static final String RESET = "\u001B[0m"; 
     private static final String RED = "\u001B[31m";
     private static final String GREEN = "\u001B[32m";
     private static final String YELLOW = "\u001B[33m";
     private static final String BLUE = "\u001B[34m";
     private static final String PURPLE = "\u001B[35m";
     public static final String CYAN = "\u001B[36m"; 
+    
 
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
@@ -31,6 +33,7 @@ public class QuizGame {
             System.out.println("║  3. Hard                       ║");
             System.out.println("╚════════════════════════════════╝" + RESET);
 
+            
 // Error handling for user input
             String difficulty;
             while (true) {
@@ -46,6 +49,7 @@ public class QuizGame {
                 }
                 break;
             }
+            
 
 // Load and validate questions 
             List<Question> questions = QuestionLoader.loadQuestion(difficulty);
@@ -53,19 +57,27 @@ public class QuizGame {
                 System.out.println(RED + "⚠ No questions available for the selected difficulty. Please try again." + RESET);
                 continue;
             }
-
+                        
+            
 // Game start animation
             displayGameStart();
             
             totalQuestions = questions.size();
-
+          
+            
 // Question display and handling
-            for (int i = 0; i < questions.size(); i++) {
-                Question q = questions.get(i);
+//prevent questions repetition
+            Set<Question> usedQuestions = new HashSet<>();        
+            Random random = new Random();                                 
+ 
+            for (int i = 0; i < totalQuestions; i++) {
+                Question q;
+                do {
+                	q = questions.get(random.nextInt(questions.size()));
+                } while (usedQuestions.contains(q));
                 
-                Collections.shuffle(questions);
-                
-                
+                usedQuestions.add(q);
+           
                 // Progress bar
                 displayProgressBar(i + 1, totalQuestions);
 
@@ -82,13 +94,18 @@ public class QuizGame {
                 System.out.println("└────────────────────────────────────────────────────────┘" + RESET);
 
 
- // Input and validate user answer
+ // Get and validate user answer
                 String answer;
                 while (true) {
                     System.out.print(BLUE + "Your Answer (A/B/C/D): " + RESET);
                     answer = userInput.nextLine().trim().toUpperCase();
-                    if (answer.matches("[ABCD]")) break;
-                    System.out.println(RED + "Invalid input! Please enter A, B, C, or D." + RESET);
+                    
+                    if (answer.equals("A") || answer.equals("B") || answer.equals("C") || answer.equals("D")) {
+                    	break;                  	 
+                    } else {
+                    	 System.out.println(RED + "Invalid input! Please enter A, B, C, or D." + RESET);
+                    }
+                    	 
                 }
 
 // Show result
@@ -128,14 +145,11 @@ public class QuizGame {
                 String userResponse = userInput.nextLine().trim().toLowerCase();
                 
                 if(userResponse.equals("y")) {
-                	playAgain = true;
                 	break;
                 	
                 } else if (userResponse.equals("n")) {
                 	displayGoodbye();
-                	displayAsciiWelcome();
-                	playAgain = false;
-                	break;
+                	return;
                 	
                 } else {
                 	System.out.println( RED + "ERROR: Invalid Input. Y for yes N for no. " + RESET);
@@ -143,15 +157,13 @@ public class QuizGame {
                 }
             	
             }
-   
+              
         }
 
-        userInput.close();
+       
     }
     
     
-    
-
 // Display animated welcome message
     private static void displayAsciiWelcome() {
         String[] welcomeFrames = {
@@ -176,7 +188,6 @@ public class QuizGame {
         }
         System.out.println("\n");
     }
-    
     
     
     
